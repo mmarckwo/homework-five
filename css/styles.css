@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+@font-face {
+  font-family: Gill;
+  src: url(fonts/GillSans.ttc);
+}
+@font-face {
+  font-family: Proxima;
+  src: url(fonts/ProximaNovaScOsfExtraCondensed.ttf);
+}
+@font-face {
+  font-family: ProximaThin;
+  src: url(fonts/Proxima-Nova-Thin.otf);
+}
+nav {
+  max-width: 980px;
+  min-height: 60px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: #000 solid 2px;
+  margin-top: 30px;
+}
+nav .logo {
+  width: 92px;
+  height: 42px;
+  border-bottom: #000 solid 2px;
+  border-right: #000 solid 2px;
+  border-top: #000 solid 2px;
+  border-left: #000 solid 2px;
+}
+nav .logo p {
+  text-decoration: none;
+  color: #000;
+  margin-top: 15px;
+  font-family: Gill;
+  font-size: 25px;
+}
+nav .links {
+  width: 592px;
+  height: 42px;
+  align-self: center;
+  display: flex;
+}
+nav .links a {
+  text-decoration: none;
+  color: #000;
+  margin: auto;
+  font-family: Gill;
+}
+nav .links p {
+  text-decoration: none;
+  color: #79addc;
+  margin: auto;
+  font-size: 25px;
+  font-family: Gill;
+}
+
+@media only screen and (max-width: 750px) {
+  nav {
+    max-width: 460px;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 30px;
+  }
+  nav .logo {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 5px;
+  }
+  nav .links {
+    max-width: 450px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 5px;
+  }
+}
+footer {
+  max-width: 1280px;
+  min-height: 100px;
+  margin: 0 auto;
+  display: flex;
+  background-color: #79addc;
+}
+footer .logo {
+  margin-top: 30px;
+  margin-left: 10%;
+  width: 92px;
+  height: 42px;
+  border-bottom: #fff solid 2px;
+  border-right: #fff solid 2px;
+  border-top: #fff solid 2px;
+  border-left: #fff solid 2px;
+}
+footer .logo p {
+  text-decoration: none;
+  color: #fff;
+  margin-top: 15px;
+  font-family: Gill;
+  font-size: 25px;
+}
+footer .copyright {
+  margin-top: 30px;
+  margin-left: 9%;
+  width: 50%;
+}
+footer .copyright p {
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  margin-top: 15px;
+  font-family: Gill;
+  font-size: 12px;
+}
+footer .images {
+  width: 115px;
+  height: 23px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10%;
+}
+
+@media only screen and (max-width: 950px) {
+  footer {
+    max-width: 536px;
+    flex-direction: column;
+    padding-left: 0px;
+    padding-right: 0px;
+    align-items: center;
+  }
+  footer .logo {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+  footer .copyright {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  footer .images {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+}
+.about {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.about .about-top-section {
+  margin-top: 90px;
+}
+.about .about-top-section h1 {
+  text-decoration: none;
+  color: #000;
+  font-family: ProximaThin;
+  font-size: 60px;
+  border-bottom: #000 solid 2px;
+  width: 185px;
+  margin-bottom: 36px;
+}
+.about .about-top-section p {
+  text-decoration: none;
+  color: #000;
+  font-family: Gill;
+  font-size: 16px;
+}
+.about .about-bottom-section {
+  margin-top: 200px;
+  margin-bottom: 180px;
+}
+.about .about-bottom-section h3 {
+  text-decoration: none;
+  color: #000;
+  font-family: ProximaThin;
+  font-size: 40px;
+  border-bottom: #000 solid 2px;
+  width: 255px;
+  margin-bottom: 36px;
+}
+.about .about-bottom-section .client {
+  max-width: 676px;
+  min-height: 150px;
+  display: flex;
+  margin-bottom: 38px;
+}
+.about .about-bottom-section .client .client-image {
+  width: 260px;
+  height: 150px;
+}
+.about .about-bottom-section .client .client1 {
+  background-image: url(../images/mb.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.about .about-bottom-section .client .client2 {
+  background-image: url(../images/jw.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.about .about-bottom-section .client .client-quote {
+  position: relative;
+  min-height: 50px;
+  width: 100%;
+  padding-left: 25px;
+}
+.about .about-bottom-section .client .client-quote p:last-of-type {
+  margin-bottom: 55px;
+}
+.about .about-bottom-section .client .client-quote p {
+  text-decoration: none;
+  color: #000;
+  font-family: Gill;
+  font-size: 16px;
+}
+.about .about-bottom-section .client .client-quote .client-name {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  text-decoration: none;
+  color: #79addc;
+  font-family: Proxima;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .about {
+    padding: 20px;
+  }
+}
